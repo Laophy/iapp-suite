@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://iappsbeats.com/# -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>iAppsBeats - Laophy Suite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-itunes-app" content="app-id=926109239" />
+    <meta property="al:ios:url" content="bbuilder://" />
+    <meta property="al:ios:app_store_id" content="926109239" />
+    <meta property="al:ios:app_name" content="Avalonia Online RPG" />
+
+    <meta property="al:android:package" content="com.iappsbeats.bbuilder" />
+    <meta property="al:android:app_name" content="Avalonia Online RPG" />
+    <meta property="al:web:url" content="https://avaloniaonline.com" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://iappsbeats.com/bbuilder/facebook/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://iappsbeats.com/bbuilder/facebook/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://iappsbeats.com/bbuilder/facebook/favicon-16x16.png"
+    />
+    <meta name="viewport" content="width=898" />
+    <meta
+      name="google-site-verification"
+      content="xW9Z1mrNdylWd2RwDiBQ0wi_3_HkxxOUyv_rCVgQzVE"
+    />
+    <link rel="stylesheet" href="menu.css" type="text/css" />
+  </head>
+  <body>
+    <div id="header" class="header">
+      <div
+        class="menuitem selected"
+        id="linketherion"
+        onclick="showEtherion();"
+      >
+        Etherion Online
+      </div>
+      <div class="menuitem" id="linkavalonia" onclick="showAvalonia();">
+        Avalonia Online
+      </div>
+      <div
+        class="menuitem"
+        id="linkavaloniatestbed"
+        onclick="showAvaloniaTestbed();"
+      >
+        Avalonia TestBed
+      </div>
+      <div class="menuitem" id="linkcorleone" onclick="showCorleone();">
+        Corleone Online
+      </div>
+      <div class="menuitem" id="linkabout" onclick="showAbout();"> - </div>
+
+      <a
+        class="menuitem"
+        href="https://iappsbeats.com/itempreview/index.html"
+        target="_blank"
+        >Item Preview</a
+      >
+      <a
+        class="menuitem"
+        href="https://iappsbeats.com/animations/index.html"
+        target="_blank"
+        >Animations</a
+      >
+      <div class="menuitem" id="linkdocs" onclick="showDocs();">Docs</div>
+      <img
+        src="https://media.discordapp.net/attachments/974016152953036831/974068534655201290/Preview.png"
+        width="32"
+        height="32"
+        style="position: absolute; right: 54px; top: 8px"
+      />
+    </div>
+    <div id="content" class="content">
+      <iframe
+        id="iframe"
+        class="iframe"
+        src="https://www.etheriononline.com/"
+        allowfullscreen="true"
+        allow="fullscreen"
+        style="float: left"
+      ></iframe>
+      <iframe
+        id="iframetwo"
+        class="iframe"
+        src="https://www.etheriononline.com/"
+        allowfullscreen="true"
+        allow="fullscreen"
+        style="float: right"
+      ></iframe>
+    </div>
+    <div id="footer" class="footer">
+      <a class="menuitem" href="mailto:support@iappsbeats.com">Support</a>
+      <a
+        class="menuitem"
+        href="https://mobile.twitter.com/etheriononline"
+        target="_blank"
+        >Twitter</a
+      >
+      <a
+        class="menuitem"
+        href="https://www.instagram.com/etheriononline/"
+        target="_blank"
+        >Instagram</u>!</a
+      >
+      <a
+        class="menuitem"
+        href="https://www.facebook.com/Etherionmmo/"
+        target="_blank"
+        >Facebook</u></a
+      >
+      <a
+        class="menuitem"
+        href=""
+        target="_blank"
+        >[Modified By Laophy]</u></a
+      >
+    </div>
+    <script>
+      function showEtherion() {
+        setSelected("linketherion");
+        document.getElementById("iframe").src =
+          "https://www.etheriononline.com/";
+      }
+      function showAvalonia() {
+        setSelected("linkavalonia");
+        document.getElementById("iframe").src = "https://avaloniaonline.com";
+      }
+      function showAvaloniaTestbed() {
+        setSelected("linkavaloniatestbed");
+        document.getElementById("iframe").src =
+          "https://testbed.avaloniaonline.com/";
+      }
+      function showCorleone() {
+        setSelected("linkcorleone");
+        document.getElementById("iframe").src = "https://corleoneonline.com";
+      }
+      function showDocs() {
+        setSelected("linkdocs");
+        document.getElementById("iframe").src = "https://docs.iappsbeats.com/";
+      }
+      function setSelected(divname) {
+        document.getElementById("linkavalonia").className =
+          "menuitem" + (divname == "linkavalonia" ? " selected" : "");
+        document.getElementById("linkcorleone").className =
+          "menuitem" + (divname == "linkcorleone" ? " selected" : "");
+        document.getElementById("linketherion").className =
+          "menuitem" + (divname == "linketherion" ? " selected" : "");
+        document.getElementById("linkavaloniatestbed").className =
+          "menuitem" + (divname == "linkavaloniatestbed" ? " selected" : "");
+        document.getElementById("linkabout").className =
+          "menuitem" + (divname == "linkabout" ? " selected" : "");
+        document.getElementById("linkdocs").className =
+          "menuitem" + (divname == "linkdocs" ? " selected" : "");
+      }
+    </script>
+  </body>
+</html>
